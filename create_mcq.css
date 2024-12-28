@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Aptos";
+    src: url("../fonts/Aptos.ttf");
+}
+
+*{
+    font-family: "Aptos", sans-serif !important;
+}
+
+.text
+{
+    color: black;
+    font-weight: bold;
+    font-family: algerian;
+    text-shadow: red 1px 1px;
+    font-size: 30px;
+}
+.question-container 
+{
+    border: 2px solid crimson;
+    padding: 15px;
+    margin-bottom: 20px; /* Increased margin for spacing */
+    background-color: rgba(240, 248, 255, 0.621);
+    border-radius: 10px;
+}
+.remove-question-btn 
+{
+    margin-top: 10px;
+}
+.fixed-bottom-buttons 
+{
+    position: fixed;
+    bottom: 20px;  /* Adjust the bottom margin */
+    right: 20px;   /* Adjust the right margin */
+    display: flex;
+    gap: 10px;     /* Space between buttons */
+}
+.add-question-btn 
+{
+    margin-top: 20px; /* Space above the button */
+}
+.question-container .form-group 
+{
+    margin-bottom: 20px; /* Space below options and question text */
+}
+.question-container .form-check 
+{
+    margin-bottom: 10px; /* Space between options */
+}
+
+/* Border style for answered questions */
+.question-container.answered {
+    border-color: #a9d369;
+}
+
+/* Blur effect for the background */
+.blur-background {
+    filter: blur(4px);
+}

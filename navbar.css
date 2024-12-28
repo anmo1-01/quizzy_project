@@ -1,0 +1,36 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css");
+
+.nv_title
+{
+    color: white;
+    font-weight: bold;
+}
+
+/* Navbar custom styles */
+.navbar-custom {
+    background-color: rgb(51 51 51 / 67%); /* Slightly dark transparent background */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Logo and Title styles */
+.navbar-brand {
+    display: flex; /* Align logo and text */
+    align-items: center; /* Center vertically */
+    color: white; /* Default text color */
+    text-decoration: none; /* Remove underline from link */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.navbar-brand img {
+    height: 40px; /* Set logo height */
+    margin-right: 10px; /* Space between logo and title */
+}
+
+.navbar-brand span {
+    font-size: 1.5rem; /* Title font size */
+}
+
+#navbarTag #logoutBtn {
+    margin: 0% !important;
+    font-size: 18px;
+}

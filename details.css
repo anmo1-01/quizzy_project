@@ -1,0 +1,192 @@
+@font-face {
+    font-family: "Aptos";
+    src: url("../fonts/Aptos.ttf");
+}
+
+*{
+    font-family: "Aptos", sans-serif !important;
+}
+
+body
+{
+    background: linear-gradient(to right, #ff8787 50%, #91eaf8 50%);
+    background-size: 100% 100%;
+    /* background-repeat: no-repeat; */
+    margin: 0;
+    height: 100vh;
+}
+
+/* hide overflow scroll if condition meets  */
+@media (min-height: 598px){
+    @media (min-width: 333px) {
+        body{
+            overflow: hidden;
+        }   
+    }
+}
+
+
+
+.responsive-form /* Responsive Form */
+{
+    text-align: center;
+    font-weight: bold;
+    font-family: algerian;
+    color: black;
+}
+.responsive-form /* form Responsive */
+{
+    font-size: 0.8rem; /* Default size for extra-small screens */
+    width: 90%;
+}
+@media (min-width: 375px) 
+{
+    .responsive-form /* Extra-Small devices */
+    {
+        font-size: 1rem; 
+        width: 85%;
+    }
+}
+@media (min-width: 425px) /* Small devices */
+{
+    .responsive-form
+    {
+        font-size: 1rem; 
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) /* Medium devices */
+{
+    .responsive-form
+    {
+        font-size: 1.3rem; 
+        width: 70%;
+    }
+}
+@media (min-width: 1024px) /* Large devices */
+{ 
+    .responsive-form
+    {
+        font-size: 1.5rem;  
+        width: 75%;
+    }
+} 
+@media (min-width: 1440px) /* Extra-Large devices */
+{ 
+    .responsive-form
+    {
+        font-size: 1.5rem;  
+        width: 65%;
+    }
+}
+
+.centered-div
+{
+    background-color: rgb(231 225 225 / 35%);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 0px 6px black;
+}
+
+
+.g-recaptcha 
+{
+    transform: scale(0.9); /* Scale down the widget */
+    transform-origin: 0 0; /* Ensure scaling starts from the top-left corner */
+    max-width: 100%; /* Limit the maximum width */  
+}
+
+@media (max-width: 576px) 
+{
+    .g-recaptcha 
+    {
+        transform: scale(0.8); /* Scale down further on extra-small screens */
+    }
+}
+@media (min-width: 375px) 
+{
+    .g-recaptcha  /* Extra-Small devices */
+    {
+        transform: scale(0.85);
+    }
+}
+@media (min-width: 425px) /* Small devices */
+{
+    .g-recaptcha 
+    {
+        transform: scale(0.85);
+    }
+}
+
+@media (min-width: 768px) /* Medium devices */
+{
+    .g-recaptcha 
+    {
+        transform: scale(0.85); 
+    }
+}
+@media (min-width: 1024px) /* Large devices */
+{ 
+    .g-recaptcha 
+    {
+        transform: scale(0.9);
+    }
+} 
+@media (min-width: 1440px) /* Extra-Large devices */
+{ 
+    .g-recaptcha 
+    {
+        transform: scale(0.9);
+    }
+}
+.responsive-button 
+{
+    font-weight: bold;
+    font-family: algerian;
+}
+
+/* Base Styles */
+label {
+    box-shadow: -1px 0px 5px black;
+    padding: 5px 20px;
+    text-shadow: 2px 2px 3px #fffe00;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+/* Responsive Styles for Tablets */
+@media (max-width: 768px) {
+    label {
+        padding: 4px 15px; /* Adjust padding for smaller screens */
+        box-shadow: -1px 0px 4px black; /* Slightly adjusted shadow */
+        text-shadow: -1px 1px 2px yellow; /* Adjusted text shadow */
+    }
+}
+
+/* Responsive Styles for Mobile Phones */
+@media (max-width: 480px) {
+    label {
+        padding: 3px 10px; /* Further adjusted padding */
+        box-shadow: -1px 0px 3px black; /* Further adjusted shadow */
+        text-shadow: -1px 1px 1px yellow; /* Further adjusted text shadow */
+        font-size: 14px; /* Adjust font size for better fit */
+    }
+}
+
+.form_title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;     
+}
+
+#midContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: contents;
+}

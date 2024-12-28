@@ -1,0 +1,243 @@
+@font-face {
+    font-family: "Aptos";
+    src: url("../fonts/Aptos.ttf");
+}
+
+*{
+    font-family: "Aptos", sans-serif !important;
+}
+
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100%; /* Ensure body takes full height */
+    overflow: hidden; /* Prevent scrollbars from appearing */
+}
+
+.background-video {
+    position: fixed; /* Full-screen coverage */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    z-index: -1; /* Puts the video behind the content */
+}
+
+.background-video video {
+    position: absolute; /* Absolute positioning */
+    top: 50%;
+    left: 50%;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Cover entire area */
+    transform: translate(-50%, -50%); /* Center the video */
+    z-index: -1; /* Make sure video stays behind the content */
+}
+
+.content {
+    position: relative; /* Relative to overlay above video */
+    z-index: 1; /* Make sure content appears above the video */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding for content */
+}
+
+p
+{
+    font-size: 45px;
+    box-shadow: 0px 1px 5px black;
+    padding: 10px 0px 10px 0px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.highlighted
+{
+    padding: 0px 5px 0px 5px;
+    opacity: 1;
+    animation: blink 1s infinite;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+}
+
+/* Keyframes for border color animation */
+@keyframes blink 
+{
+    0% 
+    {
+        background-color: rgba(255, 0, 0, 0.5);
+    }
+    
+    50% 
+    {
+        opacity: 0.5;
+    }
+    
+    100% 
+    {
+        background-color: rgba(102, 51, 153, 0.5);
+    }
+}
+
+.centered-div
+{
+    background-color: rgb(165 165 165 / 60%);
+    border-radius: 12px;
+    padding: 20px;
+    border: 3px solid #dfcdcd;
+    width: 45%;
+}
+
+@media (min-width: 320px) 
+{
+    .centered-div 
+    {
+        width: 70%; /* Size for small screens and above */
+    }
+}
+
+@media (min-width: 375px) 
+{
+    .centered-div 
+    {
+        width: 70%; /* Size for small screens and above */
+    }
+}
+
+@media (min-width: 425px) 
+{
+    .centered-div
+    {
+        width: 70%; /* Small screens and above */
+    }
+}
+        
+@media (min-width: 768px) 
+{
+    .centered-div
+    {
+        width: 70%; /* Size for medium screens and above */
+    }
+}
+
+@media (min-width: 1024px) 
+{
+    .centered-div
+    {
+        width: 60%; /* Size for medium screens and above */
+    }
+}
+        
+@media (min-width: 1440px) 
+{
+    .centered-div
+    {
+        width: 40%; /* Size for large screens and above */
+    }
+}
+
+.responsive-text /* Text Responsive */
+{
+    font-size: 1.2rem; /* Default size for extra-small screens */
+}
+
+@media (min-width: 375px) 
+{
+    .responsive-text 
+    {
+        font-size: 1.4rem; /* Size for small screens and above */
+    }
+}
+
+@media (min-width: 425px) 
+{
+    .responsive-text 
+    {
+        font-size: 1.6rem; /* Small screens and above */
+    }
+}
+        
+@media (min-width: 768px) 
+{
+    .responsive-text 
+    {
+        font-size: 1.9rem; /* Size for medium screens and above */
+    }
+}
+        
+@media (min-width: 1024px) 
+{
+    .responsive-text 
+    {
+        font-size: 2.1rem; /* Size for large screens and above */
+    }
+}
+
+@media (min-width: 1440px) 
+{
+    .responsive-text 
+    {
+        font-size: 2.2rem; /* Size for large screens and above */
+    }
+}
+
+.btn:not(#logoutBtn)
+{ 
+    /* font-weight: bold;  */
+    font-family: algerian;
+    margin: 0.7%;
+}
+
+.responsive-button /* Button Responsive */
+{
+    font-size: 1rem; /* Extra-small screens */
+}
+
+@media (min-width: 375px)  
+{
+    .responsive-button 
+    {
+        font-size: 1rem; /* Small screens and above */
+    }
+}
+
+@media (min-width: 425px) 
+{
+    .responsive-button 
+    {
+        font-size: 1rem; /* Small screens and above */
+    }
+}
+
+@media (min-width: 576px) 
+{
+    .responsive-button 
+    {
+        font-size: 1rem; /* Small screens and above */
+    }
+}
+
+@media (min-width: 768px) 
+{
+    .responsive-button 
+    {
+        font-size: 1.25rem; /* Medium screens and above */
+    }
+}
+
+@media (min-width: 1024px) 
+{
+    .responsive-button 
+    {
+        font-size: 1.4rem; /* Large screens and above */
+    }
+}
+
+@media (min-width: 1440px) 
+{
+    .responsive-button 
+    {
+        font-size: 1.5rem; /* Large screens and above */
+    }
+}
+

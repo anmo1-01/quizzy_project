@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "Aptos";
+    src: url("../fonts/Aptos.ttf");
+}
+
+*{
+    font-family: "Aptos", sans-serif !important;
+}
+
+body
+{
+    background-color: #86AEFC;
+}
+
+.text
+{
+    color: black;
+    font-weight: bold;
+    font-family: algerian;
+    text-shadow: red 1px 1px;
+    font-size: 30px;
+    margin-bottom: 0%;
+}
+
+.centered-div
+{
+    background-color: rgba(172, 151, 219, 0.329);
+    border-radius: 2px;
+    padding: 20px;
+    border: 5px solid rgba(201, 187, 232, 0.475);
+    width: 40%;
+}
+
+@media (min-width: 320px) 
+{
+    .centered-div 
+    {
+        width: 90%; /* Size for small screens and above */
+    }
+}
+
+@media (min-width: 375px) 
+{
+    .centered-div 
+    {
+        width: 80%; /* Size for small screens and above */
+    }
+}
+
+@media (min-width: 425px) 
+{
+    .centered-div
+    {
+        width: 80%; /* Small screens and above */
+    }
+}
+        
+@media (min-width: 768px) 
+{
+    .centered-div
+    {
+        width: 60%; /* Size for medium screens and above */
+    }
+}
+
+@media (min-width: 1024px) 
+{
+    .centered-div
+    {
+        width: 50%; /* Size for medium screens and above */
+    }
+}
+        
+@media (min-width: 1440px) 
+{
+    .centered-div
+    {
+        width: 40%; /* Size for large screens and above */
+    }
+}
+
+.form-group 
+{
+    margin-bottom: 20px;
+}
+
+.form-control 
+{
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-control:focus 
+{
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn 
+{
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 35%;
+}
+
+.btn:hover 
+{
+    background-color: #5a6268;
+}
+
+.btn-secondary 
+{
+    background-color: #ccc;
+    color: black;
+}
+
+.btn-secondary:hover 
+{
+    background-color: #bbb;
+}
+
+.bdr
+{
+    border: 1px solid black;
+    width: 45%;
+    padding: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;  
+}
+.bdr1
+{
+    border: 1px solid black;
+    width: 45%;
+    padding: 5px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+} 
+.form-check-input:checked + .form-check-label 
+{
+    font-weight: bold;
+}
+.bt 
+{
+    width: 100%;
+}
+.row
+{
+    margin-left: auto;
+}
+

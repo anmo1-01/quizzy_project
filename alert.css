@@ -1,0 +1,26 @@
+/* Style for the alert container */
+.alert-container {
+    position: fixed;
+    top: 1rem; /* Adjust top position */
+    right: 1rem; /* Adjust right position */
+    z-index: 1050; /* Ensure alerts are above other content */
+    max-width: 90%; /* Ensure the container does not exceed 90% of the viewport width */
+    width: auto; /* Allow container width to adjust based on content */
+    max-height: 80vh; /* Limit the height of the container */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+/* Ensure alerts do not overlap */
+.alert {
+    margin-bottom: 1rem; /* Space between alerts */
+    transition: opacity 0.5s ease; /* Smooth fade out transition */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .alert-container {
+        top: 0.5rem; /* Adjust top position on small screens */
+        right: 0.5rem; /* Adjust right position on small screens */
+        max-width: 100%; /* Full width on small screens */
+    }
+}
